@@ -2,51 +2,87 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portal Tecnológico - Ciberseguridad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Ciberseguridad</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Portal de Innovaciones Tecnológicas</h1>
-        <nav>
-            <a href="index.html">Ciberseguridad</a> | 
-            <a href="computacion.html">Computación en la Nube</a> | 
-            <a href="ia.html">Inteligencia Artificial</a>
-        </nav>
+        <h1>Portal de Ciberseguridad</h1>
+        <p>Protegiendo la infraestructura digital en la era moderna.</p>
     </header>
+    
+    <nav>
+        <a href="index.html" class="active">Ciberseguridad</a>
+        <a href="ia.html">IA en Seguridad</a>
+        <a href="computacion.html">Seguridad en Computación</a>
+    </nav>
+    
     <main>
         <section>
-            <h2>Ciberseguridad y Protección de Datos</h2>
-            <p>La seguridad digital es crítica hoy en día debido al aumento exponencial de ataques informáticos en entornos corporativos y de desarrollo web.</p>
+            <h2>¿Qué es la Ciberseguridad?</h2>
+            <p>La ciberseguridad es la práctica de defender las computadoras, los servidores, los dispositivos móviles, los sistemas electrónicos, las redes y los datos de ataques maliciosos. También se conoce como seguridad de la tecnología de la información.</p>
+            <p>En un mundo interconectado, la seguridad digital es crítica tanto para corporaciones gubernamentales como para usuarios individuales cotidianos.</p>
+        </section>
+
+        <section>
+            <h2>Principios Fundamentales</h2>
+            <p>La seguridad informática se basa tradicionalmente en tres pilares esenciales conocidos como la Tríada CIA:</p>
+            <ul>
+                <li><strong>Confidencialidad:</strong> Garantizar que solo los usuarios autorizados accedan a los datos.</li>
+                <li><strong>Integridad:</strong> Mantener la precisión y consistencia de la información sin alteraciones.</li>
+                <li><strong>Disponibilidad:</strong> Asegurar el acceso confiable a los sistemas por parte del personal autorizado.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Amenazas Comunes</h2>
+            <figure>
+                <img src="img/tema1.jpg" alt="Representación visual de un ataque de malware en una red informática">
+                <figcaption>El malware sigue siendo una de las mayores brechas de seguridad a nivel mundial.</figcaption>
+            </figure>
             
-            <h3>Principales Amenazas Globales</h3>
-            <table border="1">
-                <caption>Análisis de Riesgo Actual</caption>
+            <table>
+                <caption>Tipos de Ataques Frecuentes</caption>
                 <thead>
-                    <tr><th>Tipo de Amenaza</th><th>Impacto en la Web</th></tr>
+                    <tr>
+                        <th>Tipo de Ataque</th>
+                        <th>Descripción</th>
+                        <th>Impacto Estimado</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Phishing avanzado con IA</td><td>Muy Alto</td></tr>
-                    <tr><td>Ransomware de doble extorsión</td><td>Crítico</td></tr>
+                    <tr>
+                        <td>Phishing</td>
+                        <td>Correos fraudulentos para robar credenciales.</td>
+                        <td>Alto riesgo de robo de identidad.</td>
+                    </tr>
+                    <tr>
+                        <td>Ransomware</td>
+                        <td>Secuestro y cifrado de datos solicitando rescate.</td>
+                        <td>Pérdidas financieras masivas.</td>
+                    </tr>
+                    <tr>
+                        <td>DDoS</td>
+                        <td>Saturación de servidores para tirar servicios en línea.</td>
+                        <td>Interrupción del negocio.</td>
+                    </tr>
                 </tbody>
             </table>
-
-            <h3>Buenas Prácticas Obligatorias</h3>
-            <ul>
-                <li>Implementación de Autenticación de Múltiple Factor (MFA).</li>
-                <li>Arquitectura de seguridad Zero Trust (Confianza Cero).</li>
-            </ul>
-
-            <h3>Visualización del Tema</h3>
-            <img src="https://picsum.photos" alt="Concepto de Ciberseguridad" width="400" height="200">
         </section>
-        
+
         <section>
-            <h3>Fuentes de Consulta</h3>
-            <p>Información recuperada y verificada del sitio oficial de <a href="https://incibe.es" target="_blank">INCIBE (Instituto Nacional de Ciberseguridad)</a>.</p>
+            <h2>Fuentes consultadas</h2>
+            <ul>
+                <li><a href="https://kaspersky.es" target="_blank">Definición de Ciberseguridad - Kaspersky</a></li>
+                <li><a href="https://cisa.gov" target="_blank">Agencia de Seguridad de Infraestructura y Ciberseguridad (CISA)</a></li>
+            </ul>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 - Taller de Fundamentos Web - Equipo 03</p>
+        <p>Fundamentos WEB - Grupo 4303 | Desarrollado por DiegoAC07</p>
     </footer>
 </body>
 </html>
+
