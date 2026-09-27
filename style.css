@@ -1,0 +1,194 @@
+/* ==========================================================================
+   1. VARIABLES GLOBALES Y CONFIGURACIÓN BASE (Uso del Color y Buenas Prácticas)
+   ========================================================================== */
+:root {
+    --bg-principal: #0d1117;     /* 60%: Gris oscuro profundo */
+    --bg-tarjetas: #161b22;      /* 30%: Gris secundario estructural */
+    --color-texto: #c9d1d9;      /* Gris claro para una legibilidad óptima */
+    --color-titulos: #ffffff;    /* Blanco puro para jerarquía visual */
+    --acento-verde: #00ff66;     /* 10%: Verde neón tipo terminal segura */
+    --acento-azul: #007bff;      /* 10%: Azul tecnológico corporativo */
+    --borde-color: #30363d;
+    --fuente-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--color-texto);
+    font-family: var(--fuente-base);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   2. ELEMENTOS SEMÁNTICOS ESTRUCTURALES
+   ========================================================================== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--bg-tarjetas);
+    border: 1px solid var(--borde-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--color-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: var(--acento-verde);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Navegación común */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--bg-tarjetas);
+    border: 1px solid var(--borde-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-color: var(--acento-azul);
+    color: var(--color-titulos);
+}
+
+nav a.active {
+    border-color: var(--acento-verde);
+    color: var(--acento-verde);
+    background-color: rgba(0, 255, 102, 0.05);
+}
+
+/* Cuerpo Principal */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: var(--bg-tarjetas);
+    border: 1px solid var(--borde-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+section h2 {
+    color: var(--color-titulos);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--borde-color);
+    padding-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ==========================================================================
+   3. COMPONENTES Y ELEMENTOS ESPECÍFICOS (Listas, Tablas, Multimedia)
+   ========================================================================== */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li strong {
+    color: var(--color-titulos);
+}
+
+/* Figuras e Imágenes */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--borde-color);
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #8b949e;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Tablas Estilizadas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--bg-principal);
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--acento-verde);
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--borde-color);
+}
+
+th {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: var(--color-titulos);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Enlaces Externos */
+a {
+    color: var(--acento-azul);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--acento-verde);
+    text-decoration: underline;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #8b949e;
+    font-size: 0.85rem;
+    border-top: 1px solid var(--borde-color);
+}
